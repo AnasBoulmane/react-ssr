@@ -29560,8 +29560,8 @@ function mapStateToProps(state) {
     };
 }
 
-function loadData() {
-    console.log('I am trying to load some data!');
+function loadData(store) {
+    return store.dispatch((0, _actions.fetchUsers)());
 }
 exports.loadData = loadData;
 exports.default = (0, _reactRedux.connect)(mapStateToProps, { fetchUsers: _actions.fetchUsers })(UsersList);

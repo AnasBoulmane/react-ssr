@@ -28,8 +28,8 @@ function mapStateToProps(state) {
     };
 }
 
-function loadData() {
-    console.log('I am trying to load some data!');
+function loadData(store) {
+    return store.dispatch(fetchUsers());
 }
 export { loadData };
 export default connect(
