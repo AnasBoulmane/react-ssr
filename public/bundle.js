@@ -38926,6 +38926,10 @@ var _UsersListPage = __webpack_require__(479);
 
 var _UsersListPage2 = _interopRequireDefault(_UsersListPage);
 
+var _NotFoundPage = __webpack_require__(483);
+
+var _NotFoundPage2 = _interopRequireDefault(_NotFoundPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = [_extends({}, _App2.default, {
@@ -38934,7 +38938,7 @@ exports.default = [_extends({}, _App2.default, {
         exact: true
     }), _extends({}, _UsersListPage2.default, {
         path: '/users'
-    })]
+    }), _extends({}, _NotFoundPage2.default)]
 })];
 
 /***/ }),
@@ -39270,6 +39274,43 @@ exports.default = function () {
 };
 
 var _actions = __webpack_require__(78);
+
+/***/ }),
+/* 483 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NotFoundPage = function NotFoundPage() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement("img", {
+            src: "https://cfl.dropboxstatic.com/static/images/publicfoldersunset.svg",
+            alt: ""
+        }),
+        _react2.default.createElement(
+            "h1",
+            { className: "text-center", style: { color: '#677088' } },
+            "Oops Page not Found!"
+        )
+    );
+};
+
+exports.default = {
+    component: NotFoundPage
+};
 
 /***/ })
 /******/ ]);
