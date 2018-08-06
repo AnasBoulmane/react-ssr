@@ -4,19 +4,29 @@ import { connect } from 'react-redux';
 
 const Header = ({ auth }) => {
     const authButton = auth ? (
-        <a href="/api/logout">Logout</a>
+        <a href="/api/logout" className="btn btn-outline-primary">
+            Logout
+        </a>
     ) : (
-        <a href="/api/auth/google">Login</a>
+        <a href="/api/auth/google" className="btn btn-outline-primary">
+            Login
+        </a>
     );
 
     return (
-        <div>
-            <Link to="/">React SSR</Link>
-            <div>
-                <Link to="/users">Users</Link>
-                <Link to="/admins">Admins</Link>
+        <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+            <h5 className="my-0 mr-md-auto font-weight-normal">
+                <Link to="/">React SSR</Link>
+            </h5>
+            <nav className="my-2 my-md-0 mr-md-3">
+                <Link to="/users" className="p-2 text-dark">
+                    Users
+                </Link>
+                <Link to="/admins" className="p-2 text-dark">
+                    Admins
+                </Link>
                 {authButton}
-            </div>
+            </nav>
         </div>
     );
 };

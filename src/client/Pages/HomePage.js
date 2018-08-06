@@ -6,7 +6,12 @@ const HomePage = () => {
             <div>
                 <h1>I'm the Best component</h1>
             </div>
-            <button onClick={() => console.log('Hi there!')}>Press me!</button>
+            <button
+                onClick={() => console.log('Hi there!')}
+                className="btn btn-primary"
+            >
+                Press me!!
+            </button>
         </div>
     );
 };
