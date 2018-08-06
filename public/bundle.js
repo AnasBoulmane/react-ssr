@@ -39078,26 +39078,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var HomePage = function HomePage() {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'div',
-            null,
+            "div",
+            { className: "pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" },
             _react2.default.createElement(
-                'h1',
-                null,
-                'I\'m the Best component'
+                "h1",
+                { className: "display-4" },
+                "Welcome"
+            ),
+            _react2.default.createElement(
+                "p",
+                { className: "lead" },
+                "Check out these awesome features"
             )
-        ),
-        _react2.default.createElement(
-            'button',
-            {
-                onClick: function onClick() {
-                    return console.log('Hi there!');
-                },
-                className: 'btn btn-primary'
-            },
-            'Press me!!'
         )
     );
 };
