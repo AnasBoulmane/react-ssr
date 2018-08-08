@@ -39353,16 +39353,16 @@ var NotFoundPage = function NotFoundPage(_ref) {
 
     staticContext.notFound = true;
     return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement("img", {
-            src: "https://cfl.dropboxstatic.com/static/images/publicfoldersunset.svg",
-            alt: ""
+        'div',
+        { style: { textAlign: 'center' } },
+        _react2.default.createElement('img', {
+            src: 'https://cfl.dropboxstatic.com/static/images/publicfoldersunset.svg',
+            alt: ''
         }),
         _react2.default.createElement(
-            "h1",
-            { className: "text-center", style: { color: '#677088' } },
-            "Oops Page not Found!"
+            'h1',
+            { className: 'text-center', style: { color: '#677088' } },
+            'Oops Page not Found!'
         )
     );
 };

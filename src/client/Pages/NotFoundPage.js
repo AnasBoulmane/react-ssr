@@ -3,7 +3,7 @@ import React from 'react';
 const NotFoundPage = ({ staticContext = {} }) => {
     staticContext.notFound = true;
     return (
-        <div>
+        <div style={{ textAlign: 'center' }}>
             <img
                 src="https://cfl.dropboxstatic.com/static/images/publicfoldersunset.svg"
                 alt=""
