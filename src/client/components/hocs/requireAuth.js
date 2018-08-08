@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
-export default childComponent => {
+export default ChildComponent => {
     class RequireAuth extends Component {
         render() {
             switch (this.props.auth) {
@@ -11,7 +11,7 @@ export default childComponent => {
                 case null:
                     return <div>Loading....</div>;
                 default:
-                    return <childComponent {...this.props} />;
+                    return <ChildComponent {...this.props} />;
             }
         }
     }
