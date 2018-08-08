@@ -13,16 +13,18 @@ class UsersListPage extends Component {
             return <li key={user.id}>{user.name}</li>;
         });
     }
+    head() {
+        return (
+            <Helmet>
+                <title>{`${this.props.users.length} Users Loaded!`}</title>
+                <meta property="og:title" content="Users App" />
+            </Helmet>
+        );
+    }
     render() {
         return (
             <div>
-                <Helmet>
-                    <title>Users List Application</title>
-                    <meta
-                        property="og:title"
-                        content="Users List Application"
-                    />
-                </Helmet>
+                {this.head()}
                 <h2>Here's a big list of users</h2>
                 <ul>{this.renderUsers()}</ul>
             </div>
